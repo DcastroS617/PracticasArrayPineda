@@ -1,0 +1,60 @@
+.MainContainer{
+    text-align: center;
+    margin: 2%;
+    display: grid;
+}
+
+.llenar > button {
+    position: relative;
+    left: 215px;
+    top: -53px;
+}
+
+.CheckboxGroup {
+    position: relative;
+    left: -45px;
+}
+
+.NumeroPar > input, .NumeroPar > input ~ label{
+    position: relative;
+    left: -26px;
+}
+
+.ButtonGroup{
+    position: relative;
+    display: inline-block;
+    left: 240px;
+    bottom: 55px;
+}
+
+.ButtonGroup > button{
+    top: 5px;
+}
+
+.ButtonGroup > button ~ button {
+    position: relative;
+    top: 20px;
+    right: 86px;
+}
+
+.tamanio, .limite{
+    position: relative;
+    left: -5px;
+    margin: 5px;
+}
+
+.limite > label ~ input{
+    position: relative;
+    left: 2px;
+}
+
+.Content{
+    position: relative;
+    top: -25px;
+}
+
+.Content > label ~ textarea{
+    position: relative;
+    top: 37px;
+    left: 2px;
+}

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab01</title>
+    <link rel="stylesheet" href="../css/arreglo.css">
+    </head>
+
+<body>
+    <div class="MainContainer">
+        <div>
+            <div>
+                <h4>Crear Arreglo Random</h4>
+            </div>
+        </div>
+        <div class="Container">
+            <div class="tamanio">
+                <label>Tamaño del arreglo</label>
+                <input type="text" placeholder="tamaño">
+            </div>
+            <div class="limite">
+                <label>Limite del random</label>
+                <input type="text" placeholder="limite">
+            </div>
+            <div class="llenar">
+                <button class="btn btn-success">Llenar Arreglo</button>
+            </div>
+            <h4>Controles</h4>
+            <div class="CheckboxGroup">
+                <div class="NumeroPar">
+                    <input type="checkbox">
+                    <label>Remover números pares</label>
+                    
+                </div>
+                <div class="NumeroMenor">
+                    <input type="checkbox">
+                    <label>Remover números menores a 10</label>
+                    
+                </div>
+                <div class="NumeroMayor">
+                    <input type="checkbox">
+                    <label>Remover números mayores a 50</label>                   
+                </div>
+            </div>
+            <div class="ButtonGroup">
+                <button>Ver Arreglo</button>
+                <button>Limpiar</button>
+            </div>
+            <div class="Content">
+                <label>Contenido</label>
+                <textarea cols="30" rows="3" disabled></textarea>
+            </div>
+        </div>
+    </div>
+    
+    <script src="/js/arreglo.js"></script>
+</body>
+
+</html>

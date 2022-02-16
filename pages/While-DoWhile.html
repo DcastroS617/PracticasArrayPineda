@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab01</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container-full">
+        <div class="container mt-4">
+            <form class="form">
+            <div class="form-group Cliente">
+                <label for="tipo_cliente">Tipo de cliente:</label>
+                <select class="custom-select">
+                    <option>Escoja el tipo de cliente</option>
+                    <option value="25">admin</option>
+                    <option value="20">manager</option>
+                    <option value="15">jefe de area</option>
+                    <option value="10">cliente frecuente</option>
+                    <option value="5">primera compra</option>
+                    <option value="0">ninguno</option>
+                </select>
+            </div>
+            <div class="form-group Subtotal">
+                <label for="sub_total">Sub-Total:</label>
+                <input type="text" name="sub_total" class="form-control" placeholder="Sub total">
+            </div>
+            <div class="form-group Porcentaje_descuento">
+                <label for="porcentaje_descuento">Porcentaje de descuento:</label>
+                <input type="text" name="porcentaje_descuento" class="form-control" placeholder="Porcentaje de descuento" disabled>
+            </div>
+            <div class="form-group Monto_descuento">
+                <label for="monto_descuento">Monto de descuento:</label>
+                <input type="text" name="monto_descuento" class="form-control" placeholder="Monto de descuento" disabled/>
+            </div>
+            <div class="form-group Total">
+                <label for="total">Total:</label>
+                <input type="text" name="total" class="form-control" placeholder="Total por pagar" disabled>
+            </div>
+            <div class="form-group text-right Botones">
+                <a class="btn btn-outline-dark mr-2">Limpiar</a>
+                <a class="btn btn-outline-dark">Calcular</a>
+            </div>
+        </form>
+        </div>
+    </div>
+    <script src="../js/While-DoWhile.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+</body>
+</html>
