@@ -99,5 +99,3 @@ class Hilera {
         this.consonante = consonante
     }
 }
-/*let spliti = "awdnwkln3123nlkansdik12n3kln".split("")
-console.log(TrimNumero(spliti))*/
