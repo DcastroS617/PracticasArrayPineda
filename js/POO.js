@@ -36,6 +36,7 @@ const CrearDepartamento = (departamento) => {
 const CrearEmpleado = (empleado) => {
     ErrorNoDept()
     ErrorIdRepetidaEmp(empleado.dni)
+    ErrorDeptInvalid(empleado.department)
     empleados.push(empleado)
 }
 
@@ -43,6 +44,14 @@ const ErrorNoDept = () => {
     if (departamentos.length === 0) {
         throw new Error("Debe introducir un departamento")
     }
+}
+
+const ErrorDeptInvalid = (id) => {
+    departamentos.forEach(dept => {
+        if(dept.codigo !== id){
+            throw new Error("El departamento no existe")
+        }
+    })
 }
 
 const ErrorIdRepetidaEmp = (id) => {
@@ -74,6 +83,8 @@ const ErrorEmpVacio = (emp) => {
 }
 
 const LlenarTablaDepartamento = () => {
+    const tablahidden = document.querySelector('#DeptTable')
+    tablahidden.hidden = false
     $("#DeptTable tbody").empty()
     let fila = ""
     departamentos.forEach(dept => {
@@ -89,6 +100,8 @@ const LlenarTablaDepartamento = () => {
 }
 
 const LlenarTablaEmpleado = () => {
+    const tablahidden = document.querySelector('#EmpTable')
+    tablahidden.hidden = false
     $("#EmpTable tbody").empty()
     let fila = ""
     empleados.forEach(emp => {

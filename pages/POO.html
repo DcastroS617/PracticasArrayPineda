@@ -8,6 +8,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon.png">
 </head>
 
 <body>
@@ -30,7 +31,7 @@
                     <a class="btn btn-outline-success">Añadir</a>
                 </div>
             </form>
-            <table class="table" id="DeptTable">
+            <table class="table" id="DeptTable" hidden>
                 <thead>
                     <tr>
                         <th>Codigo</th>
@@ -63,7 +64,7 @@
                     <a class="btn btn-outline-success">Añadir</a>
                 </div>
             </form>
-            <table class="table" id="EmpTable">
+            <table class="table" id="EmpTable" hidden>
                 <thead>
                     <th>DNI</th>
                     <th>Nombre</th>
@@ -71,7 +72,8 @@
                     <th>Departamento</th>
                 </thead>
                 <tbody></tbody>
-            </table>
+            </table>       
+        <a href="../index.html">Volver al menu principal</a>
         </div>
     </div>
     <script src="../js/POO.js"></script>

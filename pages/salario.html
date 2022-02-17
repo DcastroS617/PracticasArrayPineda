@@ -5,47 +5,43 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon.png">
     <title>Lab01</title>
 </head>
 <body>
-    <div class="container mt-5">
-        <div>
-            <div>
-
-            </div>
-        </div>
-        <div>
+    <div class="container-full mt-5">
+        <div class="container">
             <form class="form">
-                <div>
+                <div class="form-group">
                     <h2>Cálculo de Salario</h2>
-                    <div>
-                        <label>Salario por horas</label>
-                        <input type="text" id="salario_horas_txt" placeholder="salario por horas">
+                    <div class="form-row mt-2">
+                        <label class="mt-1 mr-2">Salario por horas</label>
+                        <input type="text" id="salario_horas_txt" class="form-control col-sm-4" placeholder="salario por horas">
                     </div>
-                    <div>
-                        <label>Dias Trabajados</label>
-                        <input type="text" id="dias_trabajados_txt" placeholder="dias trabajados">
+                    <div class="form-row mt-2">
+                        <label class="mt-1 mr-2">Dias Trabajados</label>
+                        <input type="text" class="form-control col-sm-4" id="dias_trabajados_txt" placeholder="dias trabajados">
                     </div>
-                    <div>
-                        <label>% Deducciones</label>
-                        <input type="text" id="porcentaje_deduccion_txt" placeholder="porcentaje deducción">
+                    <div class="form-row mt-2">
+                        <label class="mt-1 mr-2">% Deducciones</label>
+                        <input type="text" id="porcentaje_deduccion_txt" class="form-control col-sm-4" placeholder="porcentaje deducción">
                     </div>
                     <h2>Resultados</h2>
-                    <div>
-                        <label>Salario Bruto</label>
-                        <input type="text" id="salario_bruto_txt" placeholder="salario bruto" disabled>
+                    <div class="form-row mt-2">
+                        <label class="mt-1 mr-2">Salario Bruto</label>
+                        <input type="text" id="salario_bruto_txt" class="form-control col-sm-4" placeholder="salario bruto" disabled>
                     </div>
-                    <div>
-                        <label>Deducciones</label>
-                        <input type="text" id="deducciones_txt" placeholder="deducciones" disabled>
+                    <div class="form-row mt-2">
+                        <label class="mt-1 mr-2">Deducciones</label>
+                        <input type="text" id="deducciones_txt" class="form-control col-sm-4" placeholder="deducciones" disabled>
                     </div>
-                    <div>
-                        <label>Salario Neto</label>
-                        <input type="text" id="salario_neto_txt" placeholder="salario neto" disabled>
+                    <div class="form-row mt-2">
+                        <label class="mt-1 mr-2">Salario Neto</label>
+                        <input type="text" id="salario_neto_txt" class="form-control col-sm-4" placeholder="salario neto" disabled>
                     </div>
-                    <div>
-                        <a href="../index.html" class="btn btn-dark">Volver</a>
-                        <a class="btn btn-dark" id="limpiar_btn">Limpiar</a>
+                    <div class="form-row mt-3 text-right">
+                        <a href="../index.html" class="mr-5">Volver al menu principal</a>
+                        <a class="btn btn-dark mr-3" id="limpiar_btn">Limpiar</a>
                         <a class="btn btn-dark" id="calcular_btn">Calcular</a>
                     </div>
                 </div>
