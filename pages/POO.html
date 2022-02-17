@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+
+<body>
+    <div class="container-full">
+        <div class="container">
+            <form class="form">
+                <div class="form-group cod">
+                    <label>Codigo</label>
+                    <input class="form-control" type="text" placeholder="codigo">
+                </div>
+                <div class="form-group nomD">
+                    <label>Nombre</label>
+                    <input type="text" placeholder="nombre" class="form-control">
+                </div>
+                <div class="form-group pres">
+                    <label>Presupuesto</label>
+                    <input type="text" placeholder="presupuesto" class="form-control">
+                </div>
+                <div class="form-group text-right addDept">
+                    <a class="btn btn-outline-success">Añadir</a>
+                </div>
+            </form>
+            <table class="table" id="DeptTable">
+                <thead>
+                    <tr>
+                        <th>Codigo</th>
+                        <th>Nombre</th>
+                        <th>Presupuesto</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
+        <div class="container">
+            <form class="form">
+                <div class="form-group dni">
+                    <label>DNI</label>
+                    <input type="text" placeholder="DNI" class="form-control">
+                </div>
+                <div class="form-group nomE">
+                    <label>Nombre</label>
+                    <input type="text" placeholder="nombre" class="form-control">
+                </div>
+                <div class="form-group ape">
+                    <label>Apellido</label>
+                    <input type="text" placeholder="apellido" class="form-control">
+                </div>
+                <div class="form-group dept">
+                    <label>Departamento</label>
+                    <input type="text" placeholder="departamento" class="form-control">
+                </div>
+                <div class="form-group text-right addEmp">
+                    <a class="btn btn-outline-success">Añadir</a>
+                </div>
+            </form>
+            <table class="table" id="EmpTable">
+                <thead>
+                    <th>DNI</th>
+                    <th>Nombre</th>
+                    <th>Apellido</th>
+                    <th>Departamento</th>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
+    </div>
+    <script src="../js/POO.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+</body>
+
+</html>
